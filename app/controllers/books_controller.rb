@@ -3,7 +3,7 @@ before_action :authenticate_user!,except:[:top, :about]
 before_action :ensure_correct_user,only: [:edit, :update, :destroy]
   def show
     @book = Book.find(params[:id])
-    @book_new = Book.new
+    @book_comment = BookComent.new
   end
 
   def index
