@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   	delete 'unfollow/:id' => 'relationships#unfollow', as: 'unfollow'
   	get 'my_followings' => "relationships#followings"
   	get 'my_followers' => "relationships#followers"
+  	get 'search' => "search#search"
 end
